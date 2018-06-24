@@ -1,0 +1,30 @@
+.slogan {
+  font-family: "IntroScriptR", "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 78px;
+  font-weight: 400;
+
+  &--main {
+    font-size: 40px;
+    line-height: 36px;
+ }
+
+  @media #{$tablet} {
+    font-size: 26px;
+    line-height: 43px;
+
+    &--main {
+      font-size: 28px;
+      line-height: 78px;
+    }
+  }
+
+  @media #{$desktop} {
+    font-size: 35px;
+    line-height: 78px;
+  }
+
+    &--main {
+      font-size: 41px;
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Торты на заказ</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -34,16 +35,16 @@
       </div>
     </header>
 
-    <main class="content">
+    <main class="page-main">
       <section class="promo">
         <div class="promo__inner">
-          <h1 class="promo__title">Торты на заказ</h1>
-          <p class="slogan  promo__slogan">Ручная работа</p>
+          <h1 class="title  title--main  promo__title">Торты на заказ</h1>
+          <p class="slogan  slogan--main  promo__slogan">Ручная работа</p>
           <ul class="promo__list">
             <li class="promo_item promo__item--natural">Натуральные ингредиенты</li>
             <li class="promo__item promo-item--delivery">Доставка бесплатно при заказе от 2000 рублей</li>
           </ul>
-          <button class="btn  promo__btn">Выбрать торт</button>
+          <a class="btn btn--order  promo__btn" href="#">Выбрать торт</a>
         </div>
       </section>
       <section class="products">
@@ -230,7 +231,7 @@
                     <span class="slide__index  decor_index">2/35</span>
                     <p class="decor__title">Ягодное ассорти</p>
                     <p class="decor__price">700 руб/кг</p>
-                    <button class="btn  decor__btn">Выбрать</button>
+                    <a class="btn  decor__btn" href="#">Выбрать</a>
                   </li>
                 </ul>
                 <div class="slider__toggles  decor__toggle">
@@ -272,7 +273,7 @@
                   </select>
                 </div>
             </fieldset>
-            <button class="btn  form__btn" type="submit">Заказать торт</button>
+            <button class="btn  btn--order  form__btn" type="submit">Заказать торт</button>
           </form>
         </div>
       </section>
@@ -387,22 +388,22 @@
         <p class="customer-care__description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы
           он был создан исключительно для вас и для вашего события.</p>
       </section>
-      <section class="order-process">
-        <h2 class="title  title--white  order-process__title">Как заказать</h2>
-        <ul class="order-process__list">
-          <li class="order-process__item">
-            <h3 class="order-process__subtitle order-process__subtitle--first">Срок заказа</h3>
-            <p class="order-process__description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать
+      <section class="order-info">
+        <h2 class="title  title--white  order-info__title">Как заказать</h2>
+        <ul class="order-info__list">
+          <li class="order-info__item">
+            <h3 class="order-info__subtitle order-process__subtitle--first">Срок заказа</h3>
+            <p class="order-info__description">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать
               минимум за неделю.</p>
           </li>
-          <li class="order-process__item">
-            <h3 class="order-process__subtitle order-process__subtitle--second">Доставка по городу</h3>
-            <p class="order-process__description">Доставка в пределах города 200 рублей , при заказе на сумму более 2000
+          <li class="order-info__item">
+            <h3 class="order-info__subtitle order-process__subtitle--second">Доставка по городу</h3>
+            <p class="order-info__description">Доставка в пределах города 200 рублей , при заказе на сумму более 2000
               — доставка бесплатно.</p>
           </li>
-          <li class="order-process__item">
-            <h3 class="order-process__subtitle order-process__subtitle--third">Доставка за городом</h3>
-            <p class="order-process__description">Доставка за пределами города рассчитывается индивидуально.</p>
+          <li class="order-info__item">
+            <h3 class="order-info__subtitle order-process__subtitle--third">Доставка за городом</h3>
+            <p class="order-info__description">Доставка за пределами города рассчитывается индивидуально.</p>
           </li>
         </ul>
       </section>
@@ -482,7 +483,7 @@
               </li>
           </ul>
         </div>
-        <div class="copyright  page-footer__copyright">&copy; 2018 Cakes</div>
+        <div class="page-footer__copyright">&copy; 2018 Cakes</div>
       </div>
     </footer>
   </body>
