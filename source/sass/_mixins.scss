@@ -1,0 +1,26 @@
+@mixin container() {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 260px;
+
+  @media #{$tablet} {
+    padding: 0 50px;
+    width: 668px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 50px;
+    width: 1050px;
+  }
+}
+
+@mixin modal-container() {
+  padding: 0 106px;
+  width: 354px;
+}
+
+@mixin img-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

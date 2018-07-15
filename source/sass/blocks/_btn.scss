@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  width: 180px;
+  padding: 15px 5px;
+  font-size: 13px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $btn-text-color;
+  border: none;
+  border-radius: 20px;
+  background-color: $brand-color;
+  box-sizing: border-box;
+
+  &--order {
+    width: 226px;
+  }
+
+
+}

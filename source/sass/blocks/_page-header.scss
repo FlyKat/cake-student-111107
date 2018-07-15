@@ -1,0 +1,14 @@
+.page-header__logo {
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 33px;
+  font-weight: 700;
+
+  @media #{$tablet} {
+    font-size: 20px;
+  }
+
+  @media #{$desktop} {
+    font-size: 23px;
+  }
+}

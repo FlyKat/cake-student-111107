@@ -1,0 +1,40 @@
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: ('Circe', 'Arial', sans-serif);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: $black;
+  background: $background-color;
+
+//  @media #{$tablet} {
+//    font-size: 17px;
+//    line-height: 30px;
+//  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
