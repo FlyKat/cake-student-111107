@@ -1,3 +1,10 @@
+.main-nav__list {
+
+  @media #{$mobile, $tablet} {
+    display: none;
+  }
+}
+
 .main-nav__link {
   font-size: 12px;
   color: $grey--darkest;

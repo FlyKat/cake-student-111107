@@ -1,39 +1,43 @@
 @font-face {
+  font-weight: 700;
   font-family: PlayfairDisplay;
+  font-display: swap;
   src:
     url(../fonts/PlayfairDisplay-Bold.woff2) format('woff2'),
     url(../fonts/PlayfairDisplay-Bold.woff) format('woff');
-  font-weight: 700;
   }
 
-  @font-face {
+@font-face {
+  font-weight: 400;
   font-family: Circe;
+  font-display: swap;
   src:
     url(../fonts/Circe-Regular.woff2) format('woff2'),
     url(../fonts/Circe-Regular.woff) format('woff');
-  font-weight: 400;
   }
 
   @font-face {
+    font-weight: 700;
     font-family: Circe;
     src:
       url(../fonts/Circe-Bold.woff2) format('woff2'),
       url(../fonts/Circe-Bold.woff) format('woff');
-    font-weight: 700;
     }
 
   @font-face {
+    font-weight: 400;
     font-family: Roboto;
+    font-display: swap;
     src:
       url(../fonts/Roboto-Regular.woff2) format('woff2'),
       url(../fonts/Roboto-Regular.woff) format('woff');
-    font-weight: 400;
     }
 
   @font-face {
+    font-weight: 400;
     font-family: IntroScriptR;
+    font-display: swap;
     src:
       url(../fonts/IntroScriptR-H2Base.woff2) format('woff2'),
       url(../fonts/IntroScriptR-H2Base.woff) format('woff');
-    font-weight: 400;
     }

@@ -1,3 +1,10 @@
+.page-header {
+  width: auto;
+  min-height: 40px;
+  background-color: #fff;
+}
+
+
 .page-header__logo {
   font-family: "PlayfairDisplay", "Times New Roman", serif;
   font-size: 16px;
@@ -10,5 +17,12 @@
 
   @media #{$desktop} {
     font-size: 23px;
+  }
+}
+
+.page-header__phone {
+
+  @media #{$mobile} {
+    display: none;
   }
 }

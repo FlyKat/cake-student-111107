@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   margin: 0 auto;
   font-family: ('Circe', 'Arial', sans-serif);
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
   font-weight: 400;
   color: $black;
   background: $background-color;
@@ -14,14 +18,23 @@ body {
 //  }
 
   @media #{$desktop} {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
   }
 
 }
 
-.link {
+a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .visually-hidden {

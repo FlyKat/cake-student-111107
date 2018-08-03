@@ -1,0 +1,15 @@
+.container {
+ //margin: 0 auto;
+  padding: 0 20px;
+ // width: 280px;
+
+  @media #{$tablet} {
+    padding: 0 2.6%;
+   // width: 728px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 5.42%;
+    //width: 1220px;
+  }
+}

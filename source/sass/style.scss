@@ -4,6 +4,13 @@
 @import 'global/scaffolding';
 @import 'global/fonts';
 
+@import 'blocks/container';
+@import 'blocks/btn';
+@import 'blocks/title';
+@import 'blocks/slogan';
+@import 'blocks/slider';
+@import 'blocks/social';
+
 @import 'blocks/page-header';
 @import 'blocks/main-nav';
 @import 'blocks/page-main';
@@ -22,10 +29,3 @@
 @import 'blocks/contacts';
 @import 'blocks/page-footer';
 @import 'blocks/second-nav';
-
-@import 'blocks/btn';
-@import 'blocks/title';
-@import 'blocks/slogan';
-@import 'blocks/slider';
-@import 'blocks/social';
-
