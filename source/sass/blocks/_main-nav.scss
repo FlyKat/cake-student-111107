@@ -1,13 +1,17 @@
 .main-nav__list {
 
-  @media #{$mobile, $tablet} {
+  @media (max-width: $mobile-only-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__link {
   font-size: 12px;
-  color: $grey--darkest;
+  color: $text-color--main;
   text-decoration: none;
   text-transform: uppercase;
 }

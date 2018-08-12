@@ -1,7 +1,255 @@
+.products__inner {
+
+  @media (min-width: 768px) and (max-width: 1365px) {
+    padding: 0 2.6%;
+  }
+}
+
+.products__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $mobile-only-width) {
+    text-align: center;
+  }
+}
+
+.products__list {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.products__item {
+  min-height: 120px;
+  margin-bottom: 10px;
+
+  &--classic {
+    background: $background-color--item url('../img/classic-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-color--item url('../img/classic-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+
+  &--mousse {
+    background: $background-color--item url('../img/mousse-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-color--item url('../img/mousse-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+
+  &--wedding {
+    background: $background-color--item url('../img/wedding-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-color--item url('../img/wedding-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+  &--men {
+    background: $background-color--item url('../img/men-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-color--item url('../img/men-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+
+  &--women {
+    background: $background-color--item url('../img/women-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $background-color--item url('../img/women-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+
+  &--kids {
+    background: #f4f4f6 url('../img/kids-mobile@1x.jpg') no-repeat 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #f4f4f6 url('../img/kids-mobile@2x.jpg') no-repeat 50% 100%;
+      background-size: 280px auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    &--classic {
+      width: 420px;
+      height: 388px;
+      background: $background-color--item url('../img/classic-tablet@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/classic-tablet@2x.jpg') no-repeat 50%;
+        background-size: 437px auto;
+      }
+    }
+
+    &--mousse {
+      width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/mousse-tablet@1x.jpg') no-repeat 50%;
+      //z-index: 10;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/mousse-tablet@2x.jpg') no-repeat 50%;
+        background-size: 306px auto;
+      }
+    }
+
+    &--wedding {
+      align-content: flex-start;
+      width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/wedding-tablet@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/wedding-tablet@2x.jpg') no-repeat 50%;
+        background-size: 306px auto;
+      }
+    }
+    &--men {
+      width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/men-tablet@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/men-tablet@2x.jpg') no-repeat 50%;
+        background-size: 306px auto;
+      }
+    }
+
+    &--women {
+      width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/women-tablet@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/women-tablet2x.jpg') no-repeat 50%;
+        background-size: 306px auto;
+      }
+    }
+
+    &--kids {
+      width: 420px;
+      height: 388px;
+      background: #f4f4f6 url('../img/kids-tablet@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: #f4f4f6 url('../img/kids-tablet@2x.jpg') no-repeat 50%;
+        background-size: 437px auto;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    //margin: 20px;
+
+    &--classic {
+      min-width: 420px;
+      min-height: 388px;
+      background: $background-color--item url('../img/classic-desktop@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/classic-desktop@2x.jpg') no-repeat 50%;
+        background-size: 715px auto;
+      }
+    }
+
+    &--mousse {
+      min-width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/mousse-dektop@1x.jpg') no-repeat 50%;
+      //z-index: 10;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/mousse-desktop@2x.jpg') no-repeat 50%;
+        background-size: 502px auto;
+      }
+    }
+
+    &--wedding {
+      align-content: flex-start;
+      min-width: 288px;;
+      height: 184px;
+      background: $background-color--item url('../img/wedding-desktop@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/wedding-desktop@2x.jpg') no-repeat 50%;
+        background-size: 502px auto;
+      }
+    }
+    &--men {
+      min-width: 288px;;
+      min-height: 184px;
+      background: $background-color--item url('../img/men-desktop@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/men-desktop@2x.jpg') no-repeat 50%;
+        background-size: 502px auto;
+      }
+    }
+
+    &--women {
+      min-width: 288px;;
+      min-height: 184px;
+      background: $background-color--item url('../img/women-desktop@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $background-color--item url('../img/women-desktop2x.jpg') no-repeat 50%;
+        background-size: 502px auto;
+      }
+    }
+
+    &--kids {
+      min-width: 420px;
+      min-height: 388px;
+      background: #f4f4f6 url('../img/kids-desktop@1x.jpg') no-repeat 50%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: #f4f4f6 url('../img/kids-desktop@2x.jpg') no-repeat 50%;
+        background-size: 715px auto;
+      }
+    }
+  }
+}
+
+.products__link {
+  display: item;
+  min-height: 120px;
+}
+
 .products__subtitle {
-  color: $grey--darkest;
+  margin: 0;
+  margin-bottom: 7px;
+  padding-left: 13px;
+  font-size: inherit;
+  font-weight: inherit;
+  color: $text-color--main;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .products__amount {
-  color: $grey--light;
+  padding-left: 13px;
+  font-size: 12px;
+  color: $text-color--other;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.products__view {
+  display: none;
 }

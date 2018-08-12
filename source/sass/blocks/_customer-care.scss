@@ -1,0 +1,60 @@
+.customer-care {
+  padding-top: 38px;
+  padding-bottom: 170px;
+  background: url('../img/customer-care-mobile@1x.png') no-repeat 50% 170px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -100px;
+    padding-top: 172px;
+    padding-bottom: 128px;
+    min-height: 420px;
+    background: url('../img/customer-care-tablet@1x.png') no-repeat 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 330px;
+    padding-bottom: 128px;
+    min-height: 776px;
+    background: url('../img/customer-care-desktop@1x.png') no-repeat 100%;
+  }
+}
+
+.customer-care__title {
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    width: 48.66%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+    width: 36.89%;
+  }
+}
+
+.customer-care__slogan {
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    width: 48.66%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    width: 36.89%;
+  }
+}
+
+.customer-care__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 48.66%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36.89%;
+  }
+}

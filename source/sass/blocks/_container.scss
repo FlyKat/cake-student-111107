@@ -1,15 +1,38 @@
 .container {
  //margin: 0 auto;
-  padding: 0 20px;
- // width: 280px;
+  //padding: 0 20px;
+  padding: 0 6.25%;
+  min-width: 320px;
 
-  @media #{$tablet} {
-    padding: 0 2.6%;
+  @media (min-width: $tablet-width) {
+    padding: 0 6.12%;
+    //padding: 0 2.6%;
    // width: 728px;
   }
 
-  @media #{$desktop} {
-    padding: 0 5.42%;
-    //width: 1220px;
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    //padding: 0 5.34%;
+    padding: 0 73px;
+    max-width: 1366px;
   }
 }
+
+
+wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 700px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+//div {
+//  overflow: hidden;
+//}
+

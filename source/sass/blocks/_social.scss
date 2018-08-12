@@ -1,0 +1,13 @@
+.social__slogan {
+  margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.social__list {
+  width: 72px;
+  height: 23px;
+  background: green;
+}

@@ -11,18 +11,18 @@
   line-height: 33px;
   font-weight: 700;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop-width) {
     font-size: 23px;
   }
 }
 
 .page-header__phone {
 
-  @media #{$mobile} {
+  @media (max-width: $mobile-only-width) {
     display: none;
   }
 }

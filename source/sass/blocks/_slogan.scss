@@ -2,10 +2,11 @@
   margin: 0;
   font-family: "IntroScriptR", "Roboto", sans-serif;
   font-size: 22px;
-  line-height: normal;
+  //line-height: normal;
   font-weight: 400;
+  color: $text-color--slogan;
 
-   @media #{$tablet} {
+   @media (min-width: $tablet-width) {
     font-size: 26px;
 
     &--main {
@@ -13,7 +14,7 @@
     }
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop-width) {
     font-size: 35px;
 
     &--main {

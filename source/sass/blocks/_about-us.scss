@@ -1,0 +1,115 @@
+.about-us {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 34px;
+  }
+}
+
+.about-us__inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 22px;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 347px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.about-us__img {
+  margin-right: 12.14%;
+  margin-bottom: 12px;
+  width: 156px;
+  height: 156px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    margin: 0;
+    top: -10px;
+    right: 6.12%;
+    width: 312px;
+    height: 312px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 510px;
+    height: 510px;
+  }
+}
+
+.about-us__img img {
+  border-radius: 50%;
+}
+
+.about-us__social {
+
+  @media (min-width: $tablet-width) {
+   order: 4;
+   margin-bottom: 76px;
+  }
+}
+
+.about-us__info {
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+    width: 347px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.about-us__description {
+  margin: 0;
+}
+
+.about-us__blockquote {
+  margin: 0;
+  padding: 0 10px;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 13px;
+  //line-height: 33px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin: 0 auto;
+    width: 374px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 674px;
+    font-size: 25px;
+  }
+}
+
+.about-us__signature {
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 31px;
+}

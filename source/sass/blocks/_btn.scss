@@ -7,7 +7,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $btn-text-color;
+  color: $text-color--btn;
   border: none;
   border-radius: 20px;
   background-color: $brand-color;
@@ -18,7 +18,7 @@
     width: 226px;
   }
 
-  @media #{$mobile} {
+  @media (max-width: $mobile-only-width) {
     margin: 0 auto;
   }
 }

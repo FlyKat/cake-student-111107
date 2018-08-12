@@ -5,21 +5,21 @@
 body {
   min-width: 320px;
   margin: 0 auto;
-  font-family: ('Circe', 'Arial', sans-serif);
+  font-family: 'Circe', 'Arial', sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  //line-height: 20px;
   font-weight: 400;
-  color: $black;
-  background: $background-color;
+  color: $text-color--main;
+  background: $background-color--main;
 
 //  @media #{$tablet} {
 //    font-size: 17px;
 //    line-height: 30px;
 //  }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 24px;
+    //line-height: 24px;
   }
 
 }
@@ -37,12 +37,16 @@ li {
   list-style: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
   width: 1px;
   height: 1px;
+  margin: -1px;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 

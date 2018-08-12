@@ -1,18 +1,39 @@
-@mixin container() {
-  margin: 0 auto;
-  padding: 0 30px;
-  width: 260px;
+//@mixin container() {
+//  margin: 0 auto;
+ // padding: 0 30px;
+ // width: 260px;
 
-  @media #{$tablet} {
-    padding: 0 50px;
-    width: 668px;
-  }
+ // @media (min-width: $tablet-width) {
+//    padding: 0 50px;
+//    width: 668px;
+ // }
 
-  @media #{$desktop} {
-    padding: 0 50px;
-    width: 1050px;
-  }
-}
+ // @media (min-width: $desktop-width) {
+//    padding: 0 50px;
+ //  width: 1050px;
+ // }
+//}
+
+@mixin container {
+  //margin: 0 auto;
+   //padding: 0 20px;
+   padding: 0 6.25%;
+   min-width: 320px;
+
+   @media (min-width: $tablet-width) {
+     padding: 0 6.12%;
+     //padding: 0 2.6%;
+    // width: 728px;
+   }
+
+   @media (min-width: $desktop-width) {
+     margin: 0 auto;
+     //padding: 0 5.34%;
+     padding: 0 73px;
+     max-width: 1366px;
+   }
+ }
+
 
 @mixin modal-container() {
   padding: 0 106px;

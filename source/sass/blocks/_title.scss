@@ -2,27 +2,29 @@
   margin: 0;
   font-family: "PlayfairDisplay", "Times New Roman", serif;
   font-size: 24px;
-  line-height: 33px;
+  //line-height: 33px;
   font-weight: 700;
 
   &--main {
     font-size: 40px;
     line-height: 36px;
+    letter-spacing: 4px;
  }
 
-  @media #{$tablet} {
+  @media (min-width: $tablet-width) {
     font-size: 28px;
-    line-height: 38px;
+    //line-height: 38px;
 
     &--main {
       font-size: 60px;
       line-height: 55px;
+
     }
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop-width) {
     font-size: 40px;
-    line-height: 53px;
+   // line-height: 53px;
 
     &--main {
       font-size: 78px;
