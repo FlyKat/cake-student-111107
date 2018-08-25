@@ -10,10 +10,10 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header__inner  container">
+      <div class="page-header__inner">
         <div class="page-header__logo">Cakes</div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle">Открыть меню</button>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" aria-label="Открыть меню">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#products-scroll">Наши торты</a>
@@ -25,10 +25,13 @@
               <a class="main-nav__link" href="#reviews-scroll">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#ordering-process-scroll">Как заказать</a>
+              <a class="main-nav__link" href="#about-scroll">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#contacts-scroll">Контакты</a>
+              <a class="main-nav__link" href="#order-info-scroll">Как заказать</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contact-scroll">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -104,156 +107,202 @@
           <h2 class="title  special-order__title">Индивидуальный заказ</h2>
           <p class="slogan  special-order__slogan">Соберите торт в 3 шага</p>
           <ul class="special-order__list">
-            <li class="special-order__item">
-              <h3 class="special-order__subtitle"><span>01</span>Выберите начинку</h3>
-              <div class="slider  filling  special-order__content">
-                <ul class="slider__list  filling__list">
-                  <li class="slider__item  filling__item">
+            <li class="special-order__item  filling  slider">
+              <header class="special-order__header">
+                <span class="special-order__number">01</span>
+                <h3 class="special-order__subtitle">Выберите начинку</h3>
+              </header>
+              <div class="special-order__content">
+                <ul class="filling__list  slider__list">
+                  <li class="filling__item filling__item--active  slider__item">
                     <div class="filling__img">
                       <picture>
-                        <img src="#" alt="Начинка шоколадный ганаш">
+                        <source media="(min-width: 1366px)" srcset="img/filling1-desktop@1x.jpg 1x, img/filling1-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/filling1-tablet@1x.jpg 1x, img/filling1-tablet@2x.jpg 2x">
+                        <img src="img/filling1-mobile@1x.jpg" srcset="img/filling1-mobile@2x.jpg 2x" alt="Начинка шоколадный ганаш">
                       </picture>
                     </div>
-                    <span class="slider__index  filling_index">1/12</span>
-                    <h4 class="filling__title">Шоколадный ганаш</h4>
-                    <p class="filling__description">Ароматный шоколадный бисквит, густой шоколадный крем — самый шоколадный
-                      из всех возможных десертов!</p>
-                    <p class="filling__price">1000 руб/кг</p>
-                    <button class="btn  filling__btn">Выбрать</button>
+                    <span class="filling__index  slider__index">1/12</span>
+                    <div class="filling__info">
+                      <h4 class="filling__title">Шоколадный ганаш</h4>
+                      <p class="filling__description">Ароматный шоколадный бисквит, густой шоколадный крем — самый шоколадный
+                        из всех возможных десертов!</p>
+                      <p class="filling__price">1000 руб/кг</p>
+                      <button class="btn  filling__btn">Выбрать</button>
+                    </div>
                   </li>
-                  <li class="slider__item  filling__item">
+                  <li class="filling__item  slider__item">
                     <div class="filling__img">
                       <picture>
                         <img src="#" alt="Начинка клубничное суфле">
                       </picture>
                     </div>
-                    <span class="slider__index  filling_index">1/12</span>
+                    <span class="filling__index  slider__index">1/12</span>
                     <h4 class="filling__title">Клубничное суфле</h4>
                     <p class="filling__description">Нежное клубничное суфле</p>
                     <p class="filling__price">800 руб/кг</p>
                     <button class="btn  filling__btn">Выбрать</button>
                   </li>
                 </ul>
-                <div class="slider__toggles  filling__toggle">
-                  <button class="slider__toggle" type="button">1</button>
+                <div class="filling__toggles  slider__toggles">
+                  <button class="slider__toggle slider__toggle--active" type="button">1</button>
                   <button class="slider__toggle" type="button">2</button>
                   <button class="slider__toggle" type="button">3</button>
                   <button class="slider__toggle" type="button">4</button>
                   <button class="slider__toggle" type="button">5</button>
                 </div>
-                <button class="slider__prev  filling__prev" type="button">Предыдущий отзыв</button>
-                <button class="slider__next  filling__next" type="button">Следующий отзыв</button>
+                <button class="filling__prev  slider__prev  " type="button">Предыдущий отзыв</button>
+                <button class="filling__next  slider__next" type="button">Следующий отзыв</button>
               </div>
             </li>
-            <li class="special-order__item">
-              <h3 class="special-order__subtitle"><span>02</span>Размер</h3>
-              <div class="slider  size  special-order__content">
-                <ul class="slider__list  size__list">
-                  <li class="slider__item  size__item">
+            <li class="special-order__item special-order__item--size  size  slider">
+              <header class="special-order__header">
+                <span class="special-order__number">02</span>
+                <h3 class="special-order__subtitle">Размер</h3>
+              </header>
+              <div class="special-order__content special-order__content--size">
+                <ul class="size__list  slider__list">
+                  <li class="  size__item size__item--active  slider__item">
                     <div class="size__img">
-                      <img src="#" alt="Круг диаметром 17-18 см">
+                      <picture>
+                        <source media="(min-width: 1366px)" srcset="img/size1@1x.png 1x, img/size1@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/size1-tablet@1x.png 1x, img/size1-tablet@2x.jpg 2x">
+                        <img src="img/size1@1x.png" srcset="img/size1@2x.png 2x" alt="Круг диаметром 17-18 см">
+                      </picture>
+                      <span class="size__kg">1 кг</span>
                     </div>
-                    <span class="size__kg">1 кг</span>
-                    <p class="size__description">17-18 см (1 кг — 6 персон)</p>
+                    <p class="size__description">17-18 см (1&nbsp;кг&nbsp;—&nbsp;6&nbsp;персон)</p>
                     <button class="btn  size__btn">Выбрать</button>
                   </li>
-                  <li class="slider__item  size__item">
-                    <div class="size__img">
-                      <img src="#" alt="Круг диаметром 23-24 см">
+                  <li class="size__item  slider__item">
+                    <div class="size__img size__img--2">
+                      <picture>
+                        <source media="(min-width: 1366px)" srcset="img/size2@1x.png 1x, img/size2@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/size2-tablet@1x.png 1x, img/size2-tablet@2x.jpg 2x">
+                        <img src="img/size2@1x.jpg" srcset="img/size2@2x.png 2x" alt="Круг диаметром 23-24 см">
+                      </picture>
+                      <span class="size__kg">2 кг</span>
                     </div>
-                    <span class="size__kg">2 кг</span>
-                    <p class="size__description">23-24 см (10 — 12 персон)</p>
+                    <p class="size__description">23-24 см (10&nbsp;—&nbsp;12&nbsp;персон)</p>
                     <button class="btn  size__btn">Выбрать</button>
                   </li>
-                  <li class="slider__item  size__item">
-                    <div class="size__img">
-                      <img src="#" alt="Два яруса 25 и 20 см">
+                  <li class="size__item  slider__item">
+                    <div class="size__img size__img--3">
+                      <picture>
+                        <source media="(min-width: 1366px)" srcset="img/size3@1x.png 1x, img/size3@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/size3-tablet@1x.png 1x, img/size3-tablet@2x.jpg 2x">
+                        <img src="img/size3@1x.png" srcset="img/size3@2x.png 2x" alt="Два яруса 25 и 20 см">
+                      </picture>
+                      <span class="size__kg">5 кг</span>
                     </div>
-                    <span class="size__kg">5 кг</span>
-                    <p class="size__description">Два яруса 25 и 20 см (15 — 20 персон)</p>
+                    <p class="size__description">Два яруса 25 и 20 см (15&nbsp;—&nbsp;20&nbsp;персон)</p>
                     <button class="btn  size__btn">Выбрать</button>
                   </li>
-                  <li class="slider__item  size__item">
-                    <div class="size__img">
-                      <img src="#" alt="Три яруса 30, 25 и 18 см">
+                  <li class="size__item  slider__item">
+                    <div class="size__img size__img--4">
+                      <picture>
+                        <source media="(min-width: 1366px)" srcset="img/size4@1x.png 1x, img/size4@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/size4-tablet@1x.png 1x, img/size4-tablet@2x.jpg 2x">
+                        <img src="img/size4@1x.png" srcset="img/size4@2x.png 2x" alt="Три яруса 30, 25 и 18 см">
+                      </picture>
+                      <span class="size__kg">8 кг</span>
                     </div>
-                    <span class="size__kg">8 кг</span>
-                    <p class="size__description">Три яруса 30, 25 и 18 см (25 — 30 персон)</p>
+                    <p class="size__description">Три яруса 30, 25 и 18 см (25&nbsp;—&nbsp;30&nbsp;персон)</p>
                     <button class="btn  size__btn">Выбрать</button>
                   </li>
                 </ul>
-                <div class="slider__toggles  size__toggle">
-                  <button class="slider__toggle" type="button">1</button>
+                <div class="size__toggles  slider__toggles">
+                  <button class="slider__toggle slider__toggle--active" type="button">1</button>
                   <button class="slider__toggle" type="button">2</button>
                   <button class="slider__toggle" type="button">3</button>
                   <button class="slider__toggle" type="button">4</button>
                 </div>
-                <button class="slider__prev  reviews__prev" type="button">Предыдущий отзыв</button>
-                <button class="slider__next  reviews__next" type="button">Следующий отзыв</button>
+                <button class="reviews__prev  slider__prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__next  slider__next" type="button">Следующий отзыв</button>
               </div>
             </li>
-            <li class="special-order__item">
-              <h3 class="special-order__subtitle"><span>03</span>Оформление</h3>
-              <div class="slider  decor  special-order__content">
-                <ul class="slider__list  decor list">
-                  <li class="slider__item  decor__item">
+            <li class="special-order__item  decor  slider">
+              <header class="special-order__header">
+                <span class="special-order__number">03</span>
+                <h3 class="special-order__subtitle">Оформление</h3>
+              </header>
+              <div class="special-order__content">
+                <ul class="decor__list  slider__list">
+                  <li class="decor__item decor__item--active  slider__item">
                     <div class="decor__img">
                       <picture>
-                        <img src="#" alt="Торт Маршмэллоу">
+                        <source media="(min-width: 1366px)" srcset="img/decor1-desktop@1x.jpg 1x, img/decor1-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/decor1-tablet@1x.jpg 1x, img/decor1-tablet@2x.jpg 2x">
+                        <img src="img/decor1-mobile@1x.jpg" srcset="img/decor1-mobile@2x.jpg 2x" alt="Офомление для торта - Маршмэллоу">
                       </picture>
                     </div>
-                    <span class="slide__index  decor_index">1/35</span>
+                    <span class="decor__index  slide__index">1/35</span>
                     <p class="decor__title">Маршмэллоу</p>
                     <p class="decor__price">600 руб/кг</p>
                     <button class="btn  decor__btn">Выбрать</button>
                   </li>
-                  <li class="slider__item  decor__item">
+                  <li class="decor__item  slider__item">
                     <div class="decor__img">
                       <picture>
-                        <img src="#" alt="Торт Ягодное ассорти">
+                        <source media="(min-width: 1366px)" srcset="img/decor2-desktop@1x.png 1x, img/decor2-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/decor2-tablet@1x.jpg 1x, img/decor2-tablet@2x.jpg 2x">
+                        <img src="img/decor2-mobile@1x.jpg" srcset="img/decor2-mobile@2x.jpg 2x" alt="Офомление для торта - Ягодное ассорти">
                       </picture>
                     </div>
-                    <span class="slide__index  decor_index">2/35</span>
+                    <span class="decor__index  slide__index">2/35</span>
                     <p class="decor__title">Ягодное ассорти</p>
                     <p class="decor__price">700 руб/кг</p>
                     <a class="btn  decor__btn" href="#">Выбрать</a>
                   </li>
+                  <!--<li class="decor__item  slider__item">
+                    <div class="decor__img">
+                      <picture>
+                        <source media="(min-width: 1366px)" srcset="img/decor3-desktop@1x.jpg 1x, img/decor3-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/decor3-tablet@1x.jpg 1x, img/decor3-tablet@2x.jpg 2x">
+                        <img src="img/decor2-mobile@1x.jpg" srcset="img/decor3-mobile@2x.jpg 2x" alt="Офомление для торта - Взбитые сливки">
+                      </picture>
+                    </div>
+                    <span class="decor__index  slide__index">3/35</span>
+                    <p class="decor__title">Взбитые сливки</p>
+                    <p class="decor__price">200 руб/кг</p>
+                    <a class="btn  decor__btn" href="#">Выбрать</a>
+                  </li>-->
                 </ul>
-                <div class="slider__toggles  decor__toggle">
-                  <button class="slider__toggle" type="button">1</button>
+                <div class="decor__toggles  slider__toggles">
+                  <button class="slider__toggle slider__toggle--active" type="button">1</button>
                   <button class="slider__toggle" type="button">2</button>
                   <button class="slider__toggle" type="button">3</button>
                   <button class="slider__toggle" type="button">4</button>
                   <button class="slider__toggle" type="button">5</button>
                 </div>
-                <button class="slider__prev  decor__prev" type="button">Предыдущий отзыв</button>
-                <button class="slider__next  decor__next" type="button">Следующий отзыв</button>
+                <button class="decor__prev  slider__prev" type="button">Предыдущий отзыв</button>
+                <button class="decor__next  slider__next" type="button">Следующий отзыв</button>
               </div>
             </li>
           </ul>
-          <form class="form  special-order__form" action="#" method="post">
-            <fieldset class="form__filter">
+          <form class="special-order__form  form" action="#" method="post">
+            <fieldset class="form__fieldset">
               <legend class="form__title">Ваш выбор</legend>
-              <ul class="form__items" role="none">
-                <li class="form__item">
+              <ul class="form__list" role="none">
+                <li class="form__item form__item--filling">
                   <label class="form__label" for="filling">Начинка</label>
-                  <select class="form__fiilter" name="filling" id="filling">
+                  <select class="form__filter" name="filling" id="filling">
                     <option value="1">Шоколадный ганаш</option>
                     <option value="2">Клубничное суфле</option>
                   </select>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--size">
                   <label class="form__label" for="size">Размер</label>
-                  <select class="form__fiilter" name="size" id="size">
+                  <select class="form__filter" name="size" id="size">
                     <option value="1">1 кг</option>
                     <option value="2">2 кг</option>
                     <option value="3">5 кг</option>
                     <option value="4">8 кг</option>
                   </select>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--decor">
                   <label class="form__label" for="decor">Оформление</label>
-                  <select class="form__fiilter" name="decor" id="decor">
+                  <select class="form__filter" name="decor" id="decor">
                     <option value="1">Маршмэллоу</option>
                     <option value="2">Ягодное ассорти</option>
                   </select>
@@ -266,59 +315,65 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__inner  container">
-          <div class="slider">
-            <h2 class="reviews__title">Отзывы</h2>
-            <div class="slider__list  reviews__list">
-              <blockquote class="slider__item  reviews__item">
-                <picture class="reviews__img">
+        <div class="reviews__inner  container  slider">
+          <h2 class="title  reviews__title">Отзывы</h2>
+          <div class="reviews__list  slider__list">
+            <blockquote class="reviews__item reviews__item--active  slider__item">
+              <div class="reviews__img">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/review-desktop@1x.jpg 1x, img/review-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                  <img src="img/review-mobile@1x.jpg" srcset="img/review-mobile@2x.jpg 2x" alt="Фото автора отзыва">
+                </picture>
+              </div>
+              <div class="reviews__info">
+                <cite class="reviews__author">
+                    <span class="reviews__author-name">Мария<br></span>юрист, 33 года
+                  </cite>
+                  <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное
+                    спасибо за своевременную доставку! Теперь будем заказывать торты только
+                    у&nbsp;вас для наших семейных праздников:) <a class="reviews__full" href="#">Развернуть</a></p>
+              </div>
+              <span class="reviews__index  slide__index">1/26</span>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <div class="reviews__img">
+                <picture>
                   <img src="#" alt="Фото автора отзыва">
                 </picture>
+              </div>
+              <div class="reviews__info">
                 <cite class="reviews__author">
-                  <span class="reviews__author-name">Мария</span>юрист, 33 года</cite>
-                <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное
-                  спасибо за своевременную доставку! Теперь будем заказывать торты только
-                  у вас для наших семейных праздников:)</p>
-                <a class="reviews__full" href="#">Развернуть</a>
-                <span class="slide__index  reviews_index">1/26</span>
-              </blockquote>
-              <blockquote class="slider__item  reviews__item">
-                <div class="reviews__img">
-                  <picture>
-                    <img src="#" alt="Фото автора отзыва">
-                  </picture>
-                </div>
-                <cite class="reviews__author">
-                  <span class="reviews__author-name">Михаил</span>20 лет</cite>
+                  <span class="reviews__author-name">Михаил<br></span>20 лет</cite>
                 <p class="reviews__text">Все супер!:)</p>
                 <a class="reviews__full" href="#">Развернуть</a>
-                <span class="slide__index  reviews_index">1/26</span>
-              </blockquote>
-            </div>
-            <div class="slider__toggles  reviews__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
-              <button class="slider__toggle" type="button">4</button>
-              <button class="slider__toggle" type="button">5</button>
-            </div>
-            <button class="slider__prev  reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="slider__next  reviews__next" type="button">Следующий отзыв</button>
+                <span class="reviews__index  slide__index">1/26</span>
+              </div>
+            </blockquote>
           </div>
+          <div class="reviews__toggles  slider__toggles">
+            <button class="slider__toggle slider__toggle--white slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle slider__toggle--white" type="button">2</button>
+            <button class="slider__toggle slider__toggle--white" type="button">3</button>
+            <button class="slider__toggle slider__toggle--white" type="button">4</button>
+            <button class="slider__toggle slider__toggle--white" type="button">5</button>
+          </div>
+          <button class="reviews__prev  slider__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next  slider__next" type="button">Следующий отзыв</button>
         </div>
       </section>
 
-      <section class="about-us">
-        <div class="about-us__inner  container">
-          <h2 class="title  about-us__title">О нас</h2>
-          <div class="about-us__img">
+      <section class="about">
+        <div class="about__inner  container">
+          <h2 class="title  about__title">О нас</h2>
+          <div class="about__img">
             <picture>
               <source media="(min-width: 1366px)" srcset="img/baker-desktop@1x.jpg 1x, img/baker-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/baker-tablet@1x.jpg 1x, img/baker-tablet@2x.jpg 2x">
               <img src="img/baker-mobile@1x.jpg" srcset="img/baker-mobile@2x.jpg 2x" alt="Фото кондитера Павла">
             </picture>
           </div>
-          <div class="social  about-us__social">
+          <div class="social  about__social">
             <span class="visually-hidden">Мы в соцсетях:</span>
             <ul class="social__list">
               <li class="social__item">
@@ -338,28 +393,28 @@
               </li>
             </ul>
           </div>
-          <div class="about-us__info">
-            <p class="slogan  about-us__slogan">О кондитере</p>
-            <ul class="about-us__list">
-              <li class="about-us__item">
-                <h3 class="about-us__subtitle">Кондитер — как призвание</h3>
-                  <p class="about-us__description">Павел — профессиональный повар в различных гастрономических областях,
+          <div class="about__info">
+            <p class="slogan  about__slogan">О кондитере</p>
+            <ul class="about__list">
+              <li class="about__item">
+                <h3 class="about__subtitle">Кондитер — как призвание</h3>
+                  <p class="about__description">Павел — профессиональный повар в различных гастрономических областях,
                         но однажды его сердце покорило кондитерское исскуство.</p>
-                  <p class="about-us__description">С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как
+                  <p class="about__description">С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как
                     кондитер</p>
               </li>
-              <li class="about-us__item">
-                <h3 class="about-us__subtitle">Принцип - натуральные ингредиенты</h3>
-                <p class="about-us__description">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает
+              <li class="about__item">
+                <h3 class="about__subtitle">Принцип - натуральные ингредиенты</h3>
+                <p class="about__description">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает
                         качественную продукцию для торжества, а&nbsp;главным принципом является
                         выбор натуральных ингредиентов.</p>
               </li>
             </ul>
           </div>
-          <blockquote class="about-us__blockquote">
+          <blockquote class="about__blockquote">
             Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты
             превращаются в божественное блюдо.
-            <cite class="about-us__signature">
+            <cite class="about__signature">
               <img src="img/signature-mobile@1x.png" alt="Фото подписи">
             </cite>
           </blockquote>
@@ -383,11 +438,11 @@
         </div>
       </section>
 
-      <section class="customer-care">
-        <div class="customer-care__inner  container">
-          <h2 class="title  customer-care__title">Забота о клиентах</h2>
-          <p class="slogan  customer-care__slogan">Для нас важно</p>
-          <p class="customer-care__description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы
+      <section class="care">
+        <div class="care__inner  container">
+          <h2 class="title  care__title">Забота о клиентах</h2>
+          <p class="slogan  care__slogan">Для нас важно</p>
+          <p class="care__description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы
             он был создан исключительно для&nbsp;вас&nbsp;и для вашего события.</p>
         </div>
       </section>
@@ -398,46 +453,46 @@
           <ul class="order-info__list">
             <li class="order-info__item">
               <span class="order-info__number">1</span>
-              <h3 class="order-info__subtitle order-process__subtitle--first">Срок заказа</h3>
+              <h3 class="order-info__subtitle order-info__subtitle--first">Срок заказа</h3>
               <p class="order-info__description">Размещать заказы желательно за 2&nbsp;-&nbsp;3&nbsp;дня. На&nbsp;выходные заказы лучше размещать
                 минимум&nbsp;за&nbsp;неделю.</p>
             </li>
             <li class="order-info__item">
               <span class="order-info__number">2</span>
-              <h3 class="order-info__subtitle order-process__subtitle--second">Доставка по городу</h3>
+              <h3 class="order-info__subtitle order-info__subtitle--second">Доставка по городу</h3>
               <p class="order-info__description">Доставка в пределах города 200 рублей , при&nbsp;заказе&nbsp;на сумму более 2000
                   доставка бесплатно.</p>
             </li>
             <li class="order-info__item">
               <span class="order-info__number">3</span>
-              <h3 class="order-info__subtitle order-process__subtitle--third">Доставка за городом</h3>
+              <h3 class="order-info__subtitle order-info__subtitle--third">Доставка за городом</h3>
               <p class="order-info__description">Доставка за пределами города рассчитывается&nbsp;индивидуально.</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="contacts__inner  container">
-          <h2 class="title  contacts__title">Контакты</h2>
-          <p class="slogan  contacts__slogan">Остались вопросы?</p>
-          <form class="contacts__form  contacts-form">
-            <p class="contacts-form__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-            <label class="contacts-form__label  visually-hidden" for="name">Ваше имя</label>
-            <input class="contacts-form__input" type="text" name="name" id="name" placeholder="Ваше имя"
+      <section class="contact">
+        <div class="contact__inner  container">
+          <h2 class="title  contact__title">Контакты</h2>
+          <p class="slogan  contact__slogan">Остались вопросы?</p>
+          <form class="contact__form  contact-form">
+            <p class="contact-form__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+            <label class="contact-form__label  visually-hidden" for="name">Ваше имя</label>
+            <input class="contact-form__input" type="text" name="name" id="name" placeholder="Ваше имя"
               required>
-            <label class="contacts-form__label  visually-hidden" for="email">Email адрес</label>
-            <input class="contacts-form__input" type="email" name="email" id="email" placeholder="Email адрес"
+            <label class="contact-form__label  visually-hidden" for="email">Email адрес</label>
+            <input class="contact-form__input" type="email" name="email" id="email" placeholder="Email адрес"
               required>
-            <label class="contacts-form__label  visually-hidden" for="message">Ваш вопрос</label>
-            <textarea class="contacts-form__input contacts-form__input--textarea" name="message" id="message" placeholder="Ваш вопрос"
+            <label class="contact-form__label  visually-hidden" for="message">Ваш вопрос</label>
+            <textarea class="contact-form__input contact-form__input--textarea" name="message" id="message" placeholder="Ваш вопрос"
               required></textarea>
-            <button class="btn  contacts-form__btn" type="submit">Отправить</button>
+            <button class="btn btn--contact  contact-form__btn" type="submit">Отправить</button>
           </form>
-          <div class="contacts__info">
-            <p class="contacts__phone">Или позвоните по телефону:<a href="tel:+79068999296"><br>+7 906 899 92 96</a></p>
-            <p class="contacts__email">Наша почта:<a href="mailto:bakerybypavel@mail.ru"> bakerybypavel@mail.ru</a></p>
-            <div class="social  contacts__social">
+          <div class="contact__info">
+            <p class="contact__phone">Или позвоните по телефону:<a href="tel:+79068999296"><br>+7 906 899 92 96</a></p>
+            <p class="contact__email">Наша почта:<a href="mailto:bakerybypavel@mail.ru"> bakerybypavel@mail.ru</a></p>
+            <div class="social  contact__social">
               <p class="social__slogan">Мы в соцсетях:</p>
               <ul class="social__list">
                 <li class="social__item">
@@ -472,10 +527,13 @@
               <a class="second-nav__link" href="#reviews-scroll">Отзывы</a>
             </li>
             <li class="second-nav__item">
-              <a class="second-nav__link" href="#ordering-process-scroll">Как заказать</a>
+              <a class="second-nav__link" href="#about-scroll">О нас</a>
             </li>
             <li class="second-nav__item">
-              <a class="second-nav__link" href="#contacts-scroll">Контакты</a>
+              <a class="second-nav__link" href="#order-info-scroll">Как заказать</a>
+            </li>
+            <li class="second-nav__item">
+              <a class="second-nav__link" href="#contact-scroll">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -498,5 +556,6 @@
         <div class="page-footer__copyright">&copy; 2018 Cakes</div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

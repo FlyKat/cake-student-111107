@@ -1,4 +1,4 @@
-.contacts {
+.contact {
   padding-top: 36px;
   padding-bottom: 50px;
 
@@ -7,26 +7,26 @@
     flex-wrap: wrap;
     padding-top: 45px;
     //padding-left: 6.12%;
-   //background: $background-color--main url('../img/contacts-tablet@1x.png') no-repeat 100% 100%;
+   //background: $background-color--main url('../img/contact-tablet@1x.png') no-repeat 100% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //background: $background-color--main url('../img/contacts-tablet@2x.png') no-repeat 100% 100%;
+      //background: $background-color--main url('../img/contact-tablet@2x.png') no-repeat 100% 100%;
       background-size: 458px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 76px;
-    //background: $background-color--main url('../img/contacts-desktop@1x.png') no-repeat 100% 100%;
+    //background: $background-color--main url('../img/contact-desktop@1x.png') no-repeat 100% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: $background-color--main url('../img/contacts-desktop@2x.png') no-repeat 100% 100%;
+      background: $background-color--main url('../img/contact-desktop@2x.png') no-repeat 100% 100%;
       //background-size: 886px auto;
     }
   }
 }
 
-.contacts__inner {
+.contact__inner {
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -34,7 +34,7 @@
   }
 }
 
-.contacts__title {
+.contact__title {
   margin-bottom: 8px;
   width: 100%;
   text-align: center;
@@ -49,7 +49,7 @@
   }
 }
 
-.contacts__slogan {
+.contact__slogan {
   margin-bottom: 8px;
   width: 100%;
 
@@ -62,7 +62,7 @@
   }
 }
 
-.contacts__form {
+.contact__form {
 
   @media (min-width: $tablet-width) {
     margin-right: 9.07%;
@@ -79,7 +79,7 @@
   }
 }
 
-.contacts-form__input {
+.contact-form__input {
   margin-bottom: 10px;
   padding: 13px 10px;
   width: 100%;
@@ -88,7 +88,7 @@
   border: none;
 
   &::placeholder {
-    color: $form-color;
+    color: $contact-form-color;
   }
 
   &--textarea {
@@ -106,7 +106,7 @@
   @media (min-width: $desktop-width) {
     padding: 21px 10px 5px 0;
     background-color: $background-color--main;
-    border-bottom: 1px solid $form-color;
+    border-bottom: 1px solid $contact-form-color;
 
     &:focus {
       padding: 10px;
@@ -125,18 +125,22 @@
   }
 }
 
-.contacts-form__btn {
+.contact-form__btn {
   margin-bottom: 26px;
+
+  @media (min-width: $mobile-only-width) and (max-width: $tablet-width) {
+    width: 160px;
+  }
 }
 
-.contacts__info {
+.contact__info {
 
   @media (min-width: $tablet-width) {
     //width: 264px;
   }
 }
 
-.contacts__phone {
+.contact__phone {
   margin-bottom: 16px;
 
   @media (min-width: $desktop-width) {
@@ -144,7 +148,7 @@
   }
 }
 
-.contacts__email {
+.contact__email {
   margin-bottom: 16px;
 
   @media screen {
@@ -152,10 +156,10 @@
   }
 }
 
-.contacts__phone a{
+.contact__phone a{
   color: $text-color--main;
 }
 
-.contacts__email a{
+.contact__email a{
   color: $text-color--main;
 }

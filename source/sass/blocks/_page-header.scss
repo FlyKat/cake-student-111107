@@ -1,21 +1,36 @@
 .page-header {
   width: auto;
   min-height: 40px;
-  background-color: #fff;
+  background: #fff;
+
+  @media (min-width: $desktop-width) {
+    padding: 50px;
+    background: $background-color--main;
+  }
+}
+
+.page-header__inner {
+
 }
 
 
 .page-header__logo {
+  padding: 11px 6.25%;
+  //padding-left: 6.25%;
   font-family: "PlayfairDisplay", "Times New Roman", serif;
   font-size: 16px;
-  line-height: 33px;
+  //line-height: 33px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    padding: 19px 0;
+    padding-left: 6.12%;
+    width:132px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 73px;
     font-size: 23px;
   }
 }

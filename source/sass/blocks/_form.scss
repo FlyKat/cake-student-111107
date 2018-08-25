@@ -1,0 +1,125 @@
+.form {
+  padding-top: 20px;
+  padding-bottom: 34px;
+  background: $background-color--item;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 46px;
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 7.37% 72px 5.98%;
+  }
+}
+
+.form__fieldset {
+  padding: 0;
+  //padding-left: 14px;
+  padding-left: 5%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    //width: 440px;
+    width: 69.18%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 805px;
+  }
+}
+
+.form__list {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.form__title {
+  margin-bottom: 11px;
+  padding-left: 4px;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 92.75%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &--filling {
+      //width: 160px;
+      width: 36.36%;
+    }
+
+    &--size {
+      //width: 74px;
+      width: 16.82%;
+    }
+
+    &--decor {
+     //width: 160px;
+     width: 36.36%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    &--filling {
+      width: 249px;
+    }
+
+    &--size {
+      width: 136px;
+    }
+
+    &--decor {
+     width: 249px;
+    }
+  }
+}
+
+.form__label {
+  margin-bottom: 5px;
+  font-family: "IntroScriptR", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: $brand-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.form__filter {
+  //width: 92.75%;
+  //width: 243px;
+  height: 30px;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-size: 14px;
+  border: 1px solid $border-color--form;
+  border-radius: 15px;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-bottom: 1px solid #c1b0af;
+    border-radius: 0;
+  }
+}
+
+

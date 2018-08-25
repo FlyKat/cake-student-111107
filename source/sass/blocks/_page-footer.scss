@@ -66,12 +66,13 @@
 .page-footer__social {
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $mobile-only-width) and (max-width: $not-desktop-width) {
     order: 4;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     margin-left: 1.64%;
     width: 11.31%;
   }

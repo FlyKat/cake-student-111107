@@ -3,6 +3,7 @@ $background-color--item: #fff;
 $background-color--footer: #898989;
 $background-color--menu: #e7e7e7;
 
+
 $text-color--main: #2d2829;
 $text-color--other: #6c6869;
 $text-color--slogan: #32313e;
@@ -10,8 +11,10 @@ $text-color--btn: #fff;
 $text-color--footer: #fff;
 $text-color--order-info: #fff;
 
-$form-color: #c9bcbb;
+$border-color--menu: #dedede;
+$border-color--form: #ddd;
 
+$contact-form-color: #c9bcbb;
 
 $brand-color--lightest: #f897a7;
 $brand-color--light:    #f77b91;
@@ -31,6 +34,7 @@ $brand-color:           #f50049;
 
 $mobile-only-width: 767px;
 $tablet-width: 768px;
+$not-desktop-width: 1365px;
 $desktop-width: 1366px;
 
 //$retina: '(min-resolution: 144dpi), (min-resolution: 1.5ppx)';

@@ -9,16 +9,34 @@
   text-decoration: none;
   color: $text-color--btn;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: $brand-color;
   box-sizing: border-box;
   cursor: pointer;
 
-  &--order {
-    width: 226px;
-  }
-
   @media (max-width: $mobile-only-width) {
     margin: 0 auto;
+  }
+
+  &--order {
+    width: 226px;
+
+    @media (min-width: $mobile-only-width) and (max-width: $tablet-width) {
+      width: 160px;
+      font-size: 10px;
+    }
+  }
+
+  &--contact {
+    font-size: 19px;
+    text-transform: lowercase;
+
+    @media (min-width: $mobile-only-width) and (max-width: $tablet-width) {
+      font-size: 14px;
+    }
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }

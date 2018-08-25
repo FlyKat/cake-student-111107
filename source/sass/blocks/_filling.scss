@@ -1,0 +1,128 @@
+.filling__item {
+  position: relative;
+  display: none;
+
+  &--active {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 23px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 43px;
+    }
+  }
+}
+
+.filling__img {
+  margin: 0 auto;
+  margin-bottom: 38px;
+  width: 241px;
+  height: 113px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    margin-left: 22px;
+    width: 210px;
+    height: 239px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 4.64%;
+    margin-left: 2.54%;
+    width: 344px;
+    height: 390px;
+  }
+}
+
+.filling__index {
+
+  @media (max-width: $mobile-only-width) {
+    position: absolute;
+    right: 8px;
+    top: 92px;
+    color: #fff;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    align-self: flex-end;
+  }
+}
+
+.filling__info {
+
+  @media (min-width: $tablet-width) {
+    margin-right: 7.87%;
+    padding-top: 24px;
+    width: 37.4%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 96px;
+    padding-top: 68px;
+    width: 292px;
+  }
+}
+
+.filling__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.filling__description {
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+}
+
+.filling__price {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    font-size: 22px;
+  }
+}
+
+.filling__btn {
+
+  @media (min-width: $tablet-width) and (max-width: $not-desktop-width) {
+    padding: 9px 5px;
+    width: 135px;
+    font-size: 10px;
+  }
+}
+
+.filling__toggles {
+  top: 180px;
+}
+

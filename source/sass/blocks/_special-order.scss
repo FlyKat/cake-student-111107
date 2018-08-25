@@ -3,20 +3,130 @@
 }
 
 .special-order__inner {
-  padding: 0 2.6%;
+
+  @media (min-width: $mobile-only-width) and (max-width: $tablet-width) {
+    padding: 0 2.6%;
+  }
 }
 
 .special-order__title {
   margin: 0;
+  margin-bottom: 10px;
   padding-left: 3px;
   text-align: center;
 }
 
 .special-order__slogan {
+  margin-bottom: 18px;
   text-align: center;
 }
 
 .special-order__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 10px;
+  padding: 0 6.96%;
+  padding-top: 10px;
+  padding-bottom: 26px;
   background: $background-color--item;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 21px;
+    padding: 0 6.32%;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+    padding: 0 3.52%;
+    padding-top: 46px;
+    padding-bottom: 30px;
+  }
+
+  &--size {
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
+}
+
+.special-order__header {
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 19px;
+  font-family: "PlayfairDisplay", "Times New Roman", serif;
+  color: $brand-color;
+
+  @media (max-width: $mobile-only-width) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 5px;
+    width: 128px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    width: 228px;
+    font-size: 27px;
+  }
+}
+
+.special-order__number {
+  margin-right: 10px;
+  font-size: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 64px;
+  }
+}
+
+.special-order__subtitle {
+  margin: 0;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 27px;
+  }
+}
+
+.special-order__content {
+
+  @media (min-width: $tablet-width) {
+    //width: 508px;
+    width: 79.87%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 905px;
+  }
+
+  &--size {
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 116px;
+      width: 905px;
+    }
+  }
 }

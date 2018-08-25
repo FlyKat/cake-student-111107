@@ -6,6 +6,11 @@
     padding-bottom: 140px;
     min-height: 460px;
     background: url('../img/features-tablet@1x.png') no-repeat 0% 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url('../img/features-tablet@2x.png') no-repeat 0% 80px;
+      background-size: 307px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -13,6 +18,11 @@
     padding-bottom: 240px;
     min-height: 670px;
     background: url('../img/features-desktop@1x.png') no-repeat 0% 55px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url('../img/features-desktop@2x.png') no-repeat 0% 55px;
+      background-size: 556px auto;
+    }
   }
 }
 
